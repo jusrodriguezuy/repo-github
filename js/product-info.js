@@ -93,7 +93,7 @@ function showComments(){
                 <div class="d-flex justify-content-between"> 
                     <span class="comment-user">` + comment.user + `</span>`;
         
-        if (comment.user == localStorage.getItem("email")) 
+        if (comment.user == localStorage.getItem("user")) 
             htmlContentToAppend += "<button type='button' class='btn btn-link' onclick='removeComment(" + index + ")'>Eliminar Comentario</button>"
         
         htmlContentToAppend +=`</div>` 
@@ -130,7 +130,7 @@ function newCommentHandler(){
         let newComment = {
             'score' : form['score'].value,
             'description' : form['comment'].value, 
-            'user' : localStorage.getItem("email"),
+            'user' : localStorage.getItem("user"),
             'dateTime' : date.slice(0,10) + " " + date.slice(11,19),
         };
 

@@ -1,8 +1,8 @@
 function submitEventHandler(evento) {
     evento.preventDefault();
     sessionStorage.setItem('logueado', true);
-    var inputEmail = document.getElementById("email");
-    localStorage.setItem("email", inputEmail.value);
+    var inputUser = document.getElementById("user");
+    localStorage.setItem("user", inputUser.value);
     window.location.href = 'index.html';
 }
 

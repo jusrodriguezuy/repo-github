@@ -52,7 +52,7 @@ function cerrarSesion(){
   location.href = "login.html"
 }
 
-let usuario = localStorage.getItem("email");
+let usuario = localStorage.getItem("user");
 
 if(!location.href.endsWith("login.html")){
   document.getElementById("navegador").innerHTML += `
